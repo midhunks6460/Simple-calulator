@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form action="/calculate" method="post">
+        <input type="text" name="expression" id="expression" placeholder="Enter an expression" required>
+        <button type="submit">Calculate</button>
+    </form>
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
